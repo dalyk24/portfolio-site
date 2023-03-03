@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Killian Daly web design portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Killian Daly's Portfolio</title>
+
+	<link rel="stylesheet" href="css/layout.css" />
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("an-image");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>  
+</head>
+
+<body onload="showSlides()">
+    <main class= "main-style">
+	 <header class="page-header">  <!-- This header contains content meant for the page top, like the page heading and subtitle. It has a class name which allows styling for all elements with this name. -->
+            <div class="header-content">  <!-- A div defines an area where styling can be specified for elements. -->
+                <h1>Killian Daly's Portfolio</h1>
+                <p>A Daily Bit of Daly</p>
+            </div>
+        </header>
+        <nav class="page-nav">
+            <ul>
+                <li><a href="#about">About <br> Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact <br> Me</a></li>
+            </ul>
+        </nav>
+       
+        <section id="about" class="about-me container">  <!-- A section is simply a section of a document. This section has an ID for unique styling of about me content and a class name for shared styling -->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="content">
+                    <b> Early Life: </b> I was born in Ireland and moved around frequently as a child, spending time living on opposite coasts of the country and overall living in about a dozen houses.
+                    As a result, I attended many different school and was never able to get comfortable in one location during that time. My family finally 
+                    settled in one place within Dublin during my late teens though, after which point my school and social life became happier and more stable.
+                    <br><br>
+                    <b> Education: </b> In terms of post-secondary education, I've previously completed Post-Leaving Certificate courses in business and computer programming, during which I studied subjects such as 
+                    business law and JavaScript. Currently, I'm a first year studying computer science at Dublin City University, where I study many interesting subjects such as web design and problem solving.
+                    <br><br>
+                    <a href="https://www.tumblr.com/blog/175674t" title="Tumblr Page" > My Tumblr </a>
+                    <a href="https://www.instagram.com/cloatrop/" title="Instagram Page" > My Instagram </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div class="content">
+                    <b> Shop Assistant, 2017: </b> As a transition year student in secondary school, I found work experience as a shop assistant in a bookshop. I had a variety of duties, my primary ones were
+                    hoovering the carpets and making tea though. I also received on the job training about interfacting with customers and recommending books, which I found difficult since I didn't feel like
+                    talking to the customers and wanted them to leave me alone. Overall, it was a relaxing experience and I enjoyed it.
+                    <br><br>
+                    <b> Database Designer, 2021: </b> I held a temporary job for a few weeks of designing a Microsoft Access database for a dating agency. During this, I spoke with the management
+                    about Access Database's functionality and their requirements, then used their feedback to design a database. I implemented the design, populated it with content such as dating preferences, 
+                    uploaded it to a secure back-end server and distributed front-end files to access it.
+                    <br><br>
+                    <a href="https://www.linkedin.com/in/killian-daly-4163a2213/" title="LinkedIn Page" > My LinkedIn </a>
+                    <a href="https://github.com/dalyk24/" title="GitHub Page" > My GitHub </a>
+                </div>
+            </div>
+        </section>
+				<br><br>
+
+        <section id="images" class="image-gallery container">
+		
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+				
+<figure class="an-image fade">
+    <img src="images/monstar.jpg" style="width:100%" alt="gallery image 1">
+     <figcaption class="image-caption"> <i> I tried out digital art during 2020 and created several images, using a program called Clip Studio Paint. This particular image was created for the purposes of a 
+    joke about Monster Energy cans at the time. </i> </figcaption>
+</figure>                   
+
+<figure class="an-image fade">
+    <img src="images/fella.jpg" style="width:100%" alt="gallery image 2">
+    <figcaption class="image-caption"> <i> During 2020 I tried out digital art and created several images, using a program called Clip Studio Paint. I planned to create a website and was going to use this image for 
+    a welcome screen, to try and beckon users in. </i> </figcaption>
+</figure> 
+
+<figure class="an-image fade">
+    <img src="images/bankapp.jpg" style="width:100%" alt="gallery image 3">
+   <figcaption class="image-caption"> <i> During a 2021 college course, I programmed an interest calculator with Java. Users can select an account type, an account number and starting balance, then click calculate 
+    to view a breakdown on their deposit. </i> </figcaption>
+</figure> 
+            
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/killian.daly34@mail.dcu.ie" method="post">
+                        <table style="width:100%">
+                            <tr>
+                              <td ><label for="contact-name">Your Name</label></td>
+                              <td style="width:70%"><input id="contact-name" type="text" name="contact-name" /></td>
+                            </tr>
+                            <tr>
+                              <td><label for="contact-email">Your email address</label></td>
+                              <td><input id="contact-email" type="email" name="contact-email" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="contact-phone">Your phone number</label></td>
+                                <td><input id="contact-phone" type="tel" name="contact-phone" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="contact-message">Your message</label></td>
+                                <td><textarea id="contact-message" name="contact-message" rows="12"> </textarea></td>
+                            </tr>
+                        </table>
+                        <input id="submit-button" type="submit" value="send my message">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+              <p> &copy; <a href="dcu.ie/">DCU 2022-2023</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Killian Daly</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is student coursework for CA106 Web Design</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+			</p>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
