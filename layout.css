@@ -1,0 +1,268 @@
+/* box sizing */
+.main-style {
+    width: 960px;
+    height: 100%;
+}
+
+section {
+    width: 76%;
+}
+
+.page-nav {
+    width: 21%;
+}
+
+#footer-layout {
+    width: 960px;
+    height: 48px;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+}
+
+textarea {
+    width: 100%;
+}
+
+#submit-button {
+    height: 50px;
+    width: 50%;   
+}
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+h1 {
+    padding: 0px;
+    margin: 0px;
+    color: #f7f7f7;
+    font-size: 80px;
+    text-align: center;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 44px;
+    color: #131313;
+    font-weight: bold;
+  }
+
+a {
+    color: #1f65d6;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* flexible content images code */
+* {box-sizing:border-box}
+
+.fade{
+    margin: 0px;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+#images .content {
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    background-color: #131313;
+    color: #dfdfdf;
+    font-size: 44px;
+    transition: 0.6s ease;
+}
+  
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    color: white;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* navigation styles */
+.page-nav {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #a5a5a5;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #131313;
+}
+
+.page-nav li a {
+    display: block;
+    color: #131313;
+    padding: 62px 8px;
+    text-decoration: none;
+    font-size: 34px;
+}
+
+li a:hover, #submit-button:hover {
+    color: #f3f3f3;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* page header styles*/
+.page-header {
+    padding: 14px;
+}
+
+.page-header p {
+    padding: 0px;
+    margin: 0px;
+    color: #f7f7f7;
+}
+
+/* main layout */
+.main-style {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#footer-layout {
+    bottom: 0px;
+}
+
+.page-nav {
+    top: 0;
+    position: sticky;
+    float: left;
+}
+
+#images .content {
+    position: relative;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+}
+
+/* styling for the section content */
+section {
+    margin: 12px 5px 14px 219px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content {
+    padding: 18px;
+}
+
+#about .content, #work .content {
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px #0e0e0e;
+}
+
+#about a, #work a {
+    margin-left: 25%;
+    font-size: 16px;
+}
+
+img {
+    border: 5px solid #050505;
+}
+
+.image-caption {
+    padding: 10px;
+    font-size: 16px;
+    color: #131313;
+    border-radius: 14px;
+}
+
+/* background colours for sections */
+#about .content, #work .content {
+    background-color: #fafafa;
+}
+
+section {
+    background-color: #d1d9fd;
+    box-shadow: 1px 1px 2px #0e0e0e;
+}
+
+.image-caption {
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 2px #0e0e0e;
+}
+
+#footer-layout, .page-header, li a:hover, .prev:hover, .next:hover, #submit-button:hover {
+    background-color: #010052;
+}
+
+textarea {
+    background-color: #fafafa;
+}
+
+body, .main-style {
+    background-color: #eef3fc;
+}
+
+/* form styling */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #1b1b1b;
+    font-size: 20px;
+}
+
+#submit-button {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+    width: 40%;
+}
+
+textarea, input {
+    box-shadow: 1px 1px 1px #0e0e0e;
+}
+
+
+/* footer styling */
+#footer-layout p {
+    padding: 10px;
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 20px;
+}
+  
+
